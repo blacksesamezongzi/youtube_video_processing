@@ -21,16 +21,23 @@ This project provides a pipeline to extract frames from YouTube videos that cont
 - Ensure the OWL-V2 model and Bag-of-Queries source code are downloaded and available.
 - Create two environments:
   - `owlv2` for object detection (OWL-V2)
-  - `boq` for visual filtering (BoQ)
+  - `boq` for visual filtering (Bag-of-Queries)
 
 ---
 
 ### Running the Pipeline
 
-To run the full pipeline, execute the following bash script:
+To run the full pipeline, execute the provided bash script using the following command:
+
+```
+bash youtube_video_pipeline.sh
+```
+
+For inference, the bash file is as following:
 
 ```bash
 #!/bin/bash
+eval "$(micromamba shell hook --shell bash)"
 
 set -e
 echo "Starting full pipeline..."
