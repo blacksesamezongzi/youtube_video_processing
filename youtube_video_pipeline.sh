@@ -1,4 +1,5 @@
 #!/bin/bash
+eval "$(micromamba shell hook --shell bash)"
 
 set -e
 echo "Starting full pipeline..."
